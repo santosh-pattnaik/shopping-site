@@ -227,7 +227,22 @@ main{
     grid-template-columns: 1fr 1fr;
     margin-right: 5rem;
 }
-.fa-solid{
+.fa-truck{
+    color: red;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+.fa-arrow-right-arrow-left{
+    color: red;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+.fa-lock{
+    color: red;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+.fa-tag{
     color: red;
     margin-left: 5rem;
     font-size: 1.5rem;
