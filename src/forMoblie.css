@@ -20,7 +20,8 @@
     }
     #checkbtn{
         display: block;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        margin-right: 3rem;
     }
     #check:checked ~ .dropdown{
         display: block;
@@ -99,8 +100,8 @@
         margin-bottom: 1rem;
     }
     #checkbtn2{
-        font-size: 2.5rem;
-        margin-right: 1rem;
+        font-size: 3.5rem;
+        margin-right: 3rem;
         position: absolute;
         top: 2rem;
         right: 0.2rem;
