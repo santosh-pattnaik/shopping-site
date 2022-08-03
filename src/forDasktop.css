@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+    /* html=16px */
+}
+body{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    grid-row: 1;
+    grid-column: 1/6;
+}
+.before-header {
+    color: rgb(31,31,31);
+    background-color: rgb(245,245,245);
+    padding:0.5rem 0 0.5rem 5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+}
+#check{
+    display: none;
+}
+#checkbtn{
+    font-size: 2rem;
+    margin-right: 1rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    display: none;
+}
+.free-shoping{
+    padding-top: 0.7rem;
+    margin-left: 1rem;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 3rem;
+}
+.dropbtn {
+    background-color: rgb(245,245,245);
+    color: rgb(31,31,31);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 10rem;
+    background-color: rgb(245,245,245);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+.dropbtn:hover ~ .dropdown-content {display: block;}
+
+.queries{
+    margin-left: 5rem;
+}
+.queries span{
+    display: inline-block;
+    padding-top: 0.7rem;
+    margin-left: 3rem;
+}
+.queries i{
+    display: inline-block;
+    padding-top: 0.7rem;
+    margin-left: 5rem;
+}
+
+.header-brand{
+    padding: 0 4.8rem;
+    height: 8rem;
+    color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    position: relative;
+}
+#check2{
+    display: none;
+}
+#checkbtn2{
+    font-size: 2rem;
+    margin-right: 1rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    display: none;
+}
+.brand{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1.5rem 0 0 2.5rem;
+}
+.nab-items{
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+    padding-top: 2.5rem;
+}
+.nab-link:link,.nab-link:visited{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s;
+    color: rgb(7, 7, 21);
+}
+.nab-link:hover,.nab-link:active{
+    color: rgb(241, 241, 241);
+    background-color: rgb(7, 7, 21);
+    
+}
+.social-icons{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 0 0 2.5rem;
+}
+.social-icons span{
+    margin-right: 1.5rem;
+}
+.quotes{
+    grid-row: 3;
+    grid-column: 1/6;
+    letter-spacing: 1rem;
+    background-color: rgb(30, 24, 24);
+    color: rgb(240, 248, 255);
+    text-align: center;
+    padding: 1rem;
+}
+section{
+    grid-row: 4;
+    grid-column: 1/6;
+    height: 100%;
+}
+main{
+    grid-row: 4;
+    grid-column: 1/6;
+    height: 100%;
+}
+.catelog-section{
+    display: flex;
+    margin-top: 1rem;
+}
+.women-banner{
+    background-image: url("https://i.pinimg.com/564x/6d/02/fe/6d02fe6adbe02dab6084d407f137850a.jpg");
+    width: 45rem;
+    height: 70vh;
+    background-size: 100% 100%;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.men-banner{
+    background-image: url("https://i.pinimg.com/564x/dc/14/8e/dc148ea18b49168e190d6398a1f1ae04.jpg");
+    width: 40vw;
+    height: 70vh;
+    background-size: 100% 100%;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.kid-banner{
+    background-image: url("https://i.pinimg.com/736x/c2/33/5a/c2335aace46a57924584e1f23cc00207.jpg");
+    width: 40vw;
+    height: 70vh;
+    background-size: 100% 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.catelog-section h1{
+    color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    font-size: 5rem;
+    font-family: Algerian;
+    margin-top: 5rem;
+
+}
+.catelog-section button{
+    font-size: 1.5rem;
+    font-family: Algerian;
+    border: none;
+    width: 15rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 2rem 0 1rem 0;
+    font-size: 1rem;
+    box-shadow: 1px 1px 10px black;
+}
+.services dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 5rem;
+}
+.fa-solid{
+    color: red;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+.quotes-two{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.quotes-two h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.quotes-two p{
+    font-size: 1.5rem;
+}
+.quotes-two span{
+    font-size: 1.3rem;
+    display: block;
+}
+.brand-banner{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    position: relative;
+}
+.bag{
+    background-image: url("https://images.unsplash.com/photo-1575032617751-6ddec2089882?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMGJhZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+    width: 35vw;
+    height: 80vh;
+    background-size: 100% 100%;
+    padding-top: 6rem;
+    padding-left: 15rem;
+    margin-left: 2rem;
+}
+.printed-shirt{
+    background-image:url("https://cdn.shopify.com/s/files/1/0752/6435/products/PortoBeige_1d7ebe25-6d3c-47e3-829e-998ce1238782_1000x.jpg?v=1647342962") ;
+    width: 70rem;
+    height: 80vh;
+    background-size: 100% 100%;
+    padding-top: 20rem;
+    padding-left: 15rem;
+}
+.offer{
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 1px solid rgb(241, 20, 20);
+    border-radius: 2px 2px 2px rgb(0, 0, 0);
+    background-color:rgb(241, 20, 20) ;
+    padding: 3rem;
+    border-radius: 50%;
+    color: rgb(241, 248, 248);
+}
+.brand-banner2{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    margin-top: 2rem;
+}
+.dresses{
+    background-image: url("https://img.freepik.com/free-photo/cute-young-woman-long-white-dress-emotionally-posing-with-graceful-long-haired-friend-standing-with-unpleased-face-expression_197531-4763.jpg?w=900&t=st=1658666081~exp=1658666681~hmac=6f300bd3aa8001d4c1f0f341c762cf2bb546c733a884bc2be1312b255dc13ec6");
+    width: 60vw;
+    height: 80vh;
+    background-size: 100% 100%;
+    padding-top: 2rem;
+    padding-left: 15rem;
+    margin-left: 2rem;
+}
+.switers{
+    background-image: url("https://i.pinimg.com/474x/4a/3a/6a/4a3a6a7c1e9335880b1ec723ca4f48b7.jpg");
+    width: 35vw;
+    height: 80vh;
+    background-size: 100% 100%;
+    padding-top: 16rem;
+    padding-left: 15rem;
+    margin-left: 2rem;
+}
+.bag h1{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.bag span{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.printed-shirt h1{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.printed-shirt span{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.dresses h1{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.dresses span{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.switers h1{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+.switers span{
+    color: rgb(39, 10, 10);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: Algerian;
+    font-weight: 600;
+}
+footer{
+    grid-row:5;
+    grid-column: 1/6;
+    background-image: linear-gradient(305deg,#2E1C01 0%,#1F1E1D 41%,#6B6B6B 100%);
+    margin-top: 2rem;
+}
+.footer-last-section{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(240, 248, 255);
+    margin: 5rem 5rem 5rem 5rem;
+    font-size: 1.2rem;
+    padding: 5rem;
+}
+.col1 h2{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.col2 dd{
+    margin-top: 1rem;
+}
+
